@@ -11,3 +11,17 @@ Pre requisites
 3) Web service that you can pass a formatted filename YYYYMMDD_HHMMSS_SPECIES.wav and can return the location in the format 'latitude longitude' or blank if no location exists.
 Modify the following line to the web service between the < and >
 http://<webservice that takes file name, works out timestamp and returns loaction as 'lat long'>?filename=${newfilename}
+
+
+
+scripts/copy_to_remote.sh
+
+This takes files for the last 24 hours from the BattyBitdNET-Pi and puts them in a /home/user/toTransfer/ directory
+It then renames files to BattyBirdNetPi_yyyymmdd_hhmmss_species.wav
+Finally it clones the toTransfer files to a Local and Remote SFTP location.
+
+Pre requisits
+1) BattyBirdNET-Pi system
+2) RClone https://github.com/rclone/rclone and configuration for Local / Remote locations
+
+Edit everything as necessary to fit your needs
