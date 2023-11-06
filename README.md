@@ -1,6 +1,6 @@
 # BattyBirdNET-Utils
 
-scripts/prep_bats_dir.sh
+**scripts/prep_bats_dir.sh**
 
 This needs to be run from the directory with the bat WAV files and will rename the files from SPECIES_YYYYMMDD_HHMMSS.wav as produced by Wildlife Acoustics Echo Meter application and saves them as YYYYMMDD_HHMMSS_SPECIES.wav
 It then checks the GUANO Metadata to check if it contains location information, used by many post proceesing analysis applications like BTO Acoustic Pipeline.
@@ -13,8 +13,7 @@ Modify the following line to the web service between the < and >
 http://<webservice that takes file name, works out timestamp and returns loaction as 'lat long'>?filename=${newfilename}
 
 
-
-scripts/copy_to_remote.sh
+**scripts/copy_to_remote.sh**
 
 This takes files for the last 24 hours from the BattyBitdNET-Pi and puts them in a /home/user/toTransfer/ directory
 It then renames files to BattyBirdNetPi_yyyymmdd_hhmmss_species.wav
