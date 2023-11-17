@@ -24,3 +24,11 @@ Pre requisits
 2) RClone https://github.com/rclone/rclone and configuration for Local / Remote locations
 
 Edit everything as necessary to fit your needs
+
+
+**scripts/denoise.sh**
+
+This script shifts the frequency of a wav file and removes the noise it also creates a slowed down by 10 times version 
+
+Pre requisits
+1) sox - https://sourceforge.net/projects/sox/
