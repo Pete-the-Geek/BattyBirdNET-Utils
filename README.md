@@ -26,9 +26,17 @@ Pre requisits
 Edit everything as necessary to fit your needs
 
 
-**scripts/denoise.sh**
+**scripts/denoise_sox.sh**
 
 This script shifts the frequency of a wav file and removes the noise it also creates a slowed down by 10 times version 
 
 Pre requisits
 1) sox - https://sourceforge.net/projects/sox/
+
+
+**scripts/denoise_ffmpeg.sh**
+
+This script shifts the frequency of a wav file and removes the noise it also creates a slowed down by 10 times version 
+
+Pre requisits
+1) ffmpeg
